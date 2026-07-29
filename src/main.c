@@ -5,11 +5,8 @@
 
 int main(void) {
 
-kv_t *db = kv_init(16);
 
-kv_put(db, "name", "alice");
-kv_put(db, "city", "berlin");
-kv_put(db, "lang", "c");
+kv_t *db = kv_init(16);
 assert(db != NULL);
 assert(db->capacity == 16);
 assert(db->count == 0);
